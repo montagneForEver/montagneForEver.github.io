@@ -10,10 +10,9 @@
 /*dimensions bloc*/
 
 body {
-    display :flex;
+    display: flex;
     margin : 0 auto;
-    border : 1px solid black;
-    width : 1000px
+
 }
 
 body * {
@@ -21,26 +20,22 @@ body * {
     padding:0;
 }
 
-#gauche {
-    min-width: 25%;
-}
-
-#droite {
-    width : 75%;
-}
-
 #droite, #gauche {
-    padding : 1em
+    padding : 1em;
 }
 
 .bloc {
-    margin : 2.5em 0 0 0;
+    margin : 2em 0 0 0;
 }
 
 /*dimensions bloc texte*/
 
+.centre {
+    text-align: center;
+}
+
 h1 {
-    margin : 0 0 1em 0;
+    margin : 0 0 0.5em 0;
     font-size:1.5em;
 }
 
@@ -92,10 +87,6 @@ h1, h2, h3 {
 
 .titre {
     font-weight: bold;
-}
-
-.centre {
-    text-align: center;
 }
 
 /*couleur police*/
