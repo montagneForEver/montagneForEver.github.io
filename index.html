@@ -4,174 +4,150 @@
     <title>Marc-Antoine BERNARD</title>
     <meta charset="UTF-8">
     <!--feuille de style-->
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
     <!--adaptation à l'affichage mobile-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!--utilisation des CSS bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--utilisation de js bootstrap : inutile pour cette application-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--fonts-->
+    <style>
+    @import url('https://fonts.cdnfonts.com/css/visby');
+    @import url('https://fonts.cdnfonts.com/css/open-sans');
+    </style>
+    <!--icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 <body>
-    <div id="container">
-    <div class="row">
-        <div id="header" class="col-md-12">
-        <h1>MARC-ANTOINE BERNARD</h1> 
-<h2>Ingenieur Industriel IA</h2> 
-<h3>En recherche de stage</h3> 
-<P>Je souhaite mettre à profit mon expérience d'ingénieur opérationnel industriel pour
- accompagner les industries dans la transformation numérique et leur permettre de
- profiter de l'avantage de l'intelligence artificielle.</P>
-<p>Je poursuis actuellement un Master en gestion de données (Data Engineer) et IA, et je
- recherche un stage de fin de Master démarrant mi avril 2026 pour une durée de 4 mois
- minimum.</p>
+<section id="gauche">
+    <P class="centre"><img src="images/portrait.jpg" width="180px"/></P>
+    <div class="bloc">
+        <ul>
+        <li><i class="bi bi-phone"></i> +33 (0)7 66 26 94 46</li>
+        <li><i class="bi bi-house"></i> Bayonne 64100</li>
+        <li><i class="bi bi-envelope"></i>
+        <a href="mailto:marcantoine.bernard@yahoo.fr
+        ?cc=&bcc=
+        &subject=Prise%20de%20contact
+        &body=Suite%20a%20la%20consultation%20de%20votre%20CV%20en%20ligne" class="lien">
+        marcantoine.bernard@yahoo.fr</a></li> 
+        <li><i class="bi bi-linkedin"></i>
+        <a href="http://www.linkedin.com/in/marc-antoine-bernard-9b5b89123"  class="lien">marc-antoine-bernard-9b5b89123</a></li>
+        <li><i class="bi bi-github"></i><a href="https://montagneforever.github.io/"  class="lien">montagneForEver</a></li>
+        </ul>
+    </div>
+    <div class="bloc">
+        <h2>Informatique</h2>
+        <ul>
+            <li> <span class="titre">Langage</span> : Python, SQL, Web, VB</li>
+            <li> <span class="titre">Progiciel</span> : SAP, GMAO, MS Office</li>
+        </ul>
+    </div>
+    <div class="bloc">
+        <h2>Langues</h2>
+        <ul>
+            <li><span class="titre">Français</span> Langue maternelle</li>
+            <li><span class="titre">Anglais</span> Expérimenté C1</li>
+            <li><span class="titre">Espagnol</span> Elémentaire A2</li>
+        </ul>
+    </div>
+        <div class="bloc">
+            <h2>Atouts</h2>
+            <ul>
+                <li>Sur le terrain & dans l'action</li>
+                <li>Ingéniosité & Curiosité</li>
+                <li>Autonomie</li>
+                <li>Rigueur & Méthode</li>
+                <li>Sincérité & Authenticité</li>
+            </ul>
+        </div>
+        <div class="bloc">
+            <h2>Centres d'intérêt</h2>
+            <ul>
+                <li><span class="titre">Alpinisme</span> 98 sommets gravis</li>
+                <li><span class="titre">Histoire</span></li>
+            </ul>
+        </div>
+</section>
+<section id="droite">
+<h1>Marc-Antoine Bernard</h1>
+<h2>INGENIEUR INDUSTRIEL IA</h2>
+<p>En recherche de stage de Master démarrant mi avril 2026 pour 4 mois minimum.</p>
+<p>Mon ambition est de mettre à profit mon expérience d'ingénieur opérationnel pour accompagner la transition numérique du secteur industriel et mettre à profit l'avantage de l'intelligence artificielle.</p>
+<p>Afin de développer mon expertise, je poursuis actuellement un Master en gestion de données (Data Engineer) et IA à l'ESTIA Bidart, et je recherche un stage de fin de Master.</p>
+<div class='bloc'>
+    <h2>Compétences</h2>
+    <ul>
+    <li class="titre">Développement WEB, Programmation informatique, Data science</li>
+    <li class="titre">Transformation, Simplification et Amélioration des processus</li>
+    <li class="titre">Gestion de projet technique</li>
+    <li class="titre">Gestion d'un service technique et Management multi-culturel</li>
+    </ul>
+</div>
+<div class="bloc">
+    <h2>Expériences professionnelles</h2>
+    <ul class="timeline">
+     <li>
+         <p class="titre">Directeur Technique Société - industrie pharma</p>
+          <p>
+            <p>De 2022 à 2025 <span class="societe">Laboratoire Renaudin</span> Itxassou (64)</p>
+            <p>
+                Gestion du service technique (20 personnes) et stabilisation & intégration des
+                effectifs suite à un turnover de 50%<br>
+                Responsable de la maintenance et des travaux neufs (budget OPEX 1M€/an, CAPEX 1M€/an)<br>
+                Gestion de la démarche OHSE du site<br>
+                Réalisation clé : Installation d'un autoclave de Stérilisation Finale, budget 900k€,
+                planning 2 ans
+            </p>
+          </p>
+     </li>
+      <li>
+          <p class="titre">Directeur Supply Chain Europe - industrie agro-alimentaire</p>
+            <p>
+                <p>De 2021 à 2022 <span class="societe">Cordier groupe INVIVO</span> Bordeaux (33)</p>
+                <p>
+                    Intégration des équipes supply chain Europe suite à la fusion des 3 entreprises<br>
+                    Mise en place d'un logiciel de sales forecast
+                </p>
+            </p>
+      </li>
+        <li>
+            <p class="titre">Responsable Technique Site - industrie métallurgique</p>
+            <p>
+                De 2010 à 2021 <span class="societe">AMCOR Capsules</span> Saint-Seurin (33)</p>
+                <p>
+                    Gestion du service technique (20 personnes)<br>
+                    Responsable de la maintenance et des travaux neufs France et Chili<br>
+                    Industrialisation de process et nouveau produit<br>
+                    Leader Master Data SAP site<br>
+                    Réalisations clés : renouvellement de 80% du parc machine, refonte du layout
+                    industriel, conception de la base de donnée Material SAP
+                </p>
+        </li>
+        <li>
+            <p class="titre">Responsable Supply Chain Site - industrie manufacturière</p>
+            <p>De 2007 à 2010 <span class="societe">SICLI groupe UTC</span> Saint-Florentin (89)</p>
+        </li>
+        <li>
+            <p class="titre">Ingénieur amélioration continue Site - industrie sidérurgique</p>
+            <p>De 2002 à 2007 <span class="societe">U&A groupe ARCELOR</span> Gueugnon (71)</p>
+        </li>
+    </ul>
+     <div class="bloc">
+         <h2>Diplômes et Formations</h2>
+         <ul class="timeline">
+             <li>
+                 <p class="titre">Ingénieur généraliste</p>
+                  <p>2001 <span class="societe">Ecole Centrale Paris</span></p>
+             </li>
+              <li>
+                  <p class="titre">Black Belt Lean Six Sigma</p>
+                  <p>2011 <span class="societe">AMCOR CI school</span> Amsterdam, NH, Netherlands</p>
+              </li>
+              <li>
+                  <p class="titre">Ingénieur Data & IA</p>
+                  <p>Depuis septembre 2025 <span class="societe">ESTIA</span> Bidart (64)</p>
+              </li>
+         </ul>
+     </div>
+</div>
 
-    <p class="right">
-        <script>
-            document.writeln("Derni&#232;re mise &#224; jour : " + document.lastModified)
-        </script>
-    </p>
-       </div>
-   </div>
-    <div class="row">
-        <div id="bandeau" class="col-md-4">
-        <p class="center"><img src="portrait.jpg" class="portrait"></p>
-<br>
-<ul>CONTACT 
-<li><i class="bi bi-phone"></i> +33 (0)7 66 26 94 46</li>
-<li><i class="bi bi-house"></i> Bayonne 64100</li>
-<li><i class="bi bi-envelope"></i>
-    <a href="mailto:marcantoine.bernard@yahoo.fr
-    ?cc=&bcc=
-&subject=Prise%20de%20contact
-&body=Suite%20a%20la%20consultation%20de%20votre%20CV%20en%20ligne" class="lien">
-    marcantoine.bernard@yahoo.fr</a></li> 
-<li><i class="bi bi-linkedin"></i>
-<a href="http://www.linkedin.com/in/marc-antoine-bernard-9b5b89123"  class="lien">marc-antoine-bernard-9b5b89123</a></li>
-</ul><br>
-<ul>VALEURS 
-<li>Congruit&#233;</li>
-<li>Humilit&#233;</li>
-<li>Motivation</li>
-<li>Confiance</li>
-<li>Autonomie</li>
-<li>Ing&#233;niosit&#233;</li>
-<li>Rigueur</li>
-<li>M&#233;thodique</li>
-<li>Curiosit&#233;</li>
-<li>Travail d&#39;&#233;quipe</li>
-<li>Convivialit&#233;</li>
-</ul><br>
-<ul>LANGUES 
-<li>Fran&#231;ais Maternel</li> 
-<li>Anglais C1</li>
-<li>Espagnol A2</li>
-</ul><br>
-<ul>INFORMATIQUE
-<li>MS Office</li>
-<li>SAP modules MM PP SD PM</li>
-<li>MS Project</li>
-<li>GMAO : SAP, Corim</li>
-<li>Programmation Python, SQL, Web</li>
-</ul><br>
-<ul>LOISIRS 
-<li>Alpinisme</li> 
-<li>Histoire</li> 
-</ul><br>
-<ul><a href="CV_Marc-Antoine_Bernard.pdf" 
-    download="CV_Marc-Antoine_Bernard.pdf" 
-    class="lien"
-    target="_blanck">Télécharger la version PDF</a></ul>
-       </div>
-        <div id="contenu" class="col-md-8">
-      
-<h1>FORMATION</h1>
-<table>
-<tr>
-    <td>2026</td>
-    <td>Master Data science & AI, ESTIA</td>
-</tr>
-<tr>
-    <td>2011</td>
-    <td>Black Belt Six Sigma</td>
-</tr>
-<tr>
-    <td>2001</td>
-    <td>Dipl&#244;me d&#39;Ing&#233;nieur G&#233;n&#233;raliste, Ecole Centrale Paris</td>
-</tr>
-
-</table>
-<h1>PARCOURS PROFESSIONNEL</h1>
-<table>
-<tr>
-    <td>2022-2025</td>
-    <td><strong>Directeur Technique</strong>
-        <br><i class="bi bi-building"></i>Laboratoire Renaudin
-        <br><i class="bi bi-compass"></i>Itxassou 64
-        <br>Encadrement de l&#39;&#233;quipe technique (20 personnes) 
-        <br>Responsable de la maintenance (1M&#8364;/an) et des travaux neufs (1M&#8364;/an)
-        <br>Gestion de la d&#233;marche OHSE du site</td>
-</tr>
-<tr>
-    <td>2021-2022</td>
-    <td><strong>Directeur Supply Chain</strong>
-        <br><i class="bi bi-building"></i>CORDIER groupe INVIVO
-        <br><i class="bi bi-compass"></i>Bordeaux 33
-        <br>Encadrement de l&#39;&#233;quipe Supply Chain Europe et des d&#233;p&#244;ts (40 personnes FR et Benelux) 
-        <br>D&#233;ploiement des projets soci&#233;t&#233; d&#39;int&#233;gration des processus SOP, Planification et MRP
-       </td>
-</tr>
-<tr>
-    <td>2010-2021</td>
-    <td><strong>Responsable Technique</strong>
-        <br><i class="bi bi-building"></i>AMCOR Capsules
-        <br><i class="bi bi-compass"></i>Saint-Seurin 33
-        <br>Encadrement de l&#39;&#233;quipe technique (20 personnes) 
-        <br>Responsable de la maintenance (1M&#8364;/an) et des travaux neufs (sites de Saint-Seurin et Santiago du Chili, 1M&#8364;/an)
-        <br>Industrialisation de process et de nouveaux produits
-        <br>Cogestion de la d&#233;marche OHSE et progr&#232;s continu du site
-        <br>Leader Master Data au d&#233;ploiement SAP du site
-       </td>
-</tr>
-<tr>
-    <td>2007-2010</td>
-    <td><strong>Responsable Supply Chain</strong>
-        <br><i class="bi bi-building"></i>SICLI groupe UTC
-        <br><i class="bi bi-compass"></i>Saint-Florentin 89
-        <br>Encadrement de l&#39;&#233;quipe Supply Chain (20 personnes)
-        <br>Gain achat, r&#233;duction des stocks et des d&#233;lais de livraison
-       </td>
-</tr>
-<tr>
-    <td>2002-2007</td>
-    <td><strong>Ing&#233;nieur am&#233;lioration continue</strong>
-        <br><i class="bi bi-building"></i>U&A groupe ARCELOR
-        <br><i class="bi bi-compass"></i>Gueugnon 71
-        <br>D&#233;ploiement de la politique TPM du site
-        <br>Pilotage de projets
-       </td>
-</tr>
-</table>
-<h1>COMPETENCES</h1>
-<ul>Gestion de projet<li>Etude de faisabilit&#233;<li>Avant-projet<li>Suivi de budget et planning<li>Animation et pilotage des phases de projets<li>Etablissement de cahier des charges<li>Appel d&#39;offre<li>FAT/SAT/QI/QO/QP</ul>
-
-    <ul>Gestion de la maintenance<li>Analyse des criticit&#233;s d&#39;&#233;quipement<li>Gestion d&#39;une strat&#233;gie de maintenance curatif/pr&#233;ventif/pr&#233;dictif<li>Utilisation d&#39;une GMAO<li>Suivi des incidents et des investigations<li>Suivi du budget<li>Gestion du stock de pi&#232;ces d&#233;tach&#233;es<li>Pilotage de l&#39;obsolescence</ul>
-    
-    <ul>Management d&#39;&#233;quipe<li>R&#233;alisation des entretiens et d&#233;clinaison des objectifs<li>Adaptation du style Participatif/Informatif/D&#233;l&#233;gatif/Directif<li>Recadrage</ul>
-    
-    <ul>Gestion d&#39;un service<li>Mise en place d&#39;une structure de gestion et animation<li>Suivi de tableau de bord<li>Communication<li>Gestion des cong&#233;s et des obligations courantes du code du travail<li>Suivi du budget</ul>
-    
-    <ul>Technique<li>M&#233;canique<li>Pneumatique<li>Hydraulique<li>Electrique distribution et application industrielle<li>Automatisme et Informatique industrielle<li>M&#233;canique des fluides et A&#233;raulique<li>Thermodynamique<li>Vapeur production et distribution<li>Traitement de l&#39;eau<li>St&#233;rilisation</ul>
-    
-    <ul>OHSE<li>R&#233;alisation des plans de pr&#233;vention<li>Evaluation des risques (incendie<li>&#233;lectrique<li>travail en hauteur<li>espace confin&#233;<li>manutention<li>travailleur isol&#233;<li>point rentrant<li>outil coupant)<li>Consignation<li>R&#233;alisation d&#39;une interruption de s&#233;curit&#233;<li>Gestion des obligations ICPE</ul>
-    
-    <ul>Lean Manufacturing<li>Takt Time<li>Standard de travail<li>Kaizen<li>5S<li>Ishikawa<li>Auto-maintenance<li>Capabilit&#233;<li>Cartes de contr&#244;le</ul>
-    
-    <ul>Supply Chain<li>Sales & Operation Plan<li>Plan de Production<li>MRP<li>Kamban<li>Flux tir&#233;</ul>
-    
-    <ul>Logistique<li>Adressage de Magasin<li>Inventaire<li>Conception de solution logistique<li>Incoterm</ul>
-       </div>
-   </div>
-   </div>
+</section>
 </body>

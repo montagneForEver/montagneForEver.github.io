@@ -1,0 +1,119 @@
+/*couleurs*/
+:root{
+--couleur-police-gauche:white;
+--couleur-police-droite:black;
+--couleur-titre : #2BABE2;
+--couleur-fond-gauche:#222222;
+--couleur-fond-droite:white;
+}
+
+/*dimensions bloc*/
+
+body {
+    display :flex;
+    margin : 0 auto;
+    border : 1px solid black;
+    width : 1000px
+}
+
+body * {
+    margin : 0;
+    padding:0;
+}
+
+#gauche {
+    min-width: 25%;
+}
+
+#droite {
+    width : 75%;
+}
+
+#droite, #gauche {
+    padding : 1em
+}
+
+.bloc {
+    margin : 2.5em 0 0 0;
+}
+
+/*dimensions bloc texte*/
+
+h1 {
+    margin : 0 0 1em 0;
+    font-size:1.5em;
+}
+
+h2, P{
+    font : 1em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+ul p {
+    margin-top: 0.2em;
+}
+
+li {
+    margin : 0.5em 0 0 0;
+    list-style: none;
+}
+
+.timeline li {
+    margin-left:0.8em;
+    list-style: disc;
+}
+
+.timeline {
+    border-left : 1px solid var(--couleur-fond-gauche);
+}
+
+/*couleurs de fond*/
+
+#droite {
+    background-color: var(--couleur-fond-droite);  
+}
+
+#gauche {
+    background-color: var(--couleur-fond-gauche);  
+}
+
+
+/*Fonts*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Visby';
+}
+
+.titre {
+    font-weight: bold;
+}
+
+.centre {
+    text-align: center;
+}
+
+/*couleur police*/
+
+#droite h2, .societe {
+    color:var(--couleur-titre);
+}
+
+#droite {
+    color:var(--couleur-police-droite);  
+}
+
+#gauche {
+    color:var(--couleur-police-gauche);    
+}
+
+a {
+    text-decoration: none;
+    color:currentColor ;
+}
+
