@@ -1,81 +1,88 @@
 /*couleurs*/
-:root{
---couleur-police-gauche:white;
---couleur-police-droite:black;
---couleur-titre : #2BABE2;
---couleur-fond-gauche:#222222;
---couleur-fond-droite:white;
+:root {
+    --couleur-police-gauche: white;
+    --couleur-police-droite: black;
+    --couleur-titre: #2BABE2;
+    --couleur-fond-gauche: #222222;
+    --couleur-fond-droite: white;
 }
 
 /*dimensions bloc*/
 
 body {
-    display: flex;
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
 body * {
-    margin : 0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-#droite, #gauche {
-    padding : 1em;
+aside,
+main {
+    padding: 1em;
 }
 
 .bloc {
-    margin : 2em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 /*dimensions bloc texte*/
 
-.centre {
+body {
+    font-size: 16px;
+}
+
+picture {
+    display: block;
     text-align: center;
+    margin: 0 auto;
 }
 
 img {
-    width:60%;
+    border: 1px solid white;
 }
 
 h1 {
-    margin : 0 0 0.5em 0;
-    font-size:1.5em;
+    margin: 0 0 0.5em 0;
+    font-size: 2rem;
 }
 
-h2, P{
-    font : 1em;
+h2,
+P {
+    font-size: 1rem;
 }
 
 p {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 ul p {
-    margin-top: 0.2em;
+    margin-top: 0.2rem;
 }
 
 li {
-    margin : 0.5em 0 0 0;
+    margin: 0.5rem 0 0 0;
     list-style: none;
 }
 
 .timeline li {
-    margin-left:0.8em;
+    margin-left: 0.8rem;
     list-style: disc;
 }
 
 .timeline {
-    border-left : 1px solid var(--couleur-fond-gauche);
+    border-left: 1px solid var(--couleur-fond-gauche);
 }
 
 /*couleurs de fond*/
 
-#droite {
-    background-color: var(--couleur-fond-droite);  
+main {
+    background-color: var(--couleur-fond-droite);
 }
 
-#gauche {
-    background-color: var(--couleur-fond-gauche);  
+aside {
+    background-color: var(--couleur-fond-gauche);
 }
 
 
@@ -84,8 +91,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Visby';
+h1,
+h2,
+h3 {
+    font-family: 'Visby', serif;
 }
 
 .titre {
@@ -94,20 +103,72 @@ h1, h2, h3 {
 
 /*couleur police*/
 
-#droite h2, .societe {
-    color:var(--couleur-titre);
+main h2,
+.societe {
+    color: var(--couleur-titre);
 }
 
-#droite {
-    color:var(--couleur-police-droite);  
+main {
+    color: var(--couleur-police-droite);
 }
 
-#gauche {
-    color:var(--couleur-police-gauche);    
+aside {
+    color: var(--couleur-police-gauche);
 }
 
 a {
     text-decoration: none;
-    color:currentColor ;
+    color: currentColor;
 }
 
+/* web responsive */
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+@media (width >=800px) {
+    body {
+        grid-template-areas:
+            "sidebar content";
+    }
+
+    .name {
+        display: none;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+
+@media screen and (width<=799px) {
+    body {
+        grid-template-areas:
+            "sidebar sidebar"
+            "content content";
+    }
+
+    .name {
+        text-align: center;
+        font-size: 7vh;
+        font-family: 'Visby', serif;
+    }
+
+    img {
+        height: 80vh;
+        max-width: 95%;
+    }
+
+    h1 {
+        display:none;
+    }
+}
