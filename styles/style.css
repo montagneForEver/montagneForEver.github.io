@@ -7,6 +7,30 @@
     --couleur-fond-droite: white;
 }
 
+/*grid*/
+
+main {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+body {
+    grid-template-areas:
+        "sidebar content";
+}
+
+.hidden {
+    display: none;
+}
+
 /*dimensions bloc*/
 
 body {
@@ -40,6 +64,7 @@ body {
 
 img {
     border: 1px solid white;
+    max-width: 60%;
 }
 
 h1 {
@@ -121,32 +146,6 @@ a {
 }
 
 /* web responsive */
-main {
-    grid-area: content;
-}
-
-aside {
-    grid-area: sidebar;
-}
-
-body {
-    display: grid;
-    grid-template-columns: 3fr 9fr;
-}
-
-body {
-    grid-template-areas:
-        "sidebar content";
-}
-
-img {
-    max-width: 60%;
-}
-
-.hidden {
-    display: none;
-}
-
 
 @media screen and (max-width: 40rem) {
     body {
@@ -155,25 +154,43 @@ img {
             "content content";
     }
 
-    .hidden {
-        display: block;
-        font-size: 10vw;
-        font-family: 'Visby', serif;
-        margin: 5vh 0;
-        text-align: center;
-    }
-
-    #metier {
-        font-size: 7vw;
-    }
-
-    img {
-        max-height: 70vh;
-        max-width: 98%;
+    .photo * {
+        padding: 0;
+        margin: 0;
     }
 
     .photo {
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hidden {
+        display: block flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #metier {
+        font-size: 5vh;
+        text-align: center;
+        font-family: 'Visby', serif;
+    }
+
+    #name {
+        font-size: 8vh;
+        text-align: center;
+        font-family: 'Visby', serif;
+    }
+
+    img {
+        display: block;
+        max-height: 60vh;
+        max-width: 98%;
+        flex: 1;
     }
 
     .showed {
