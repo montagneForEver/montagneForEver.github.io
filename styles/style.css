@@ -168,10 +168,8 @@ a {
     }
 
     .hidden {
-        display: block flex;
+        display: block;
         flex: 1;
-        flex-direction: column;
-        justify-content: center;
     }
 
     #metier {
