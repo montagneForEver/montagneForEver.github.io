@@ -134,22 +134,21 @@ body {
     grid-template-columns: 3fr 9fr;
 }
 
-@media (min-width:800px) {
-    body {
-        grid-template-areas:
-            "sidebar content";
-    }
-
-    img {
-        max-width: 60%;
-    }
-
-    .name {
-        display: none;
-    }
+body {
+    grid-template-areas:
+        "sidebar content";
 }
 
-@media screen and (max-width: 799px) {
+img {
+    max-width: 60%;
+}
+
+.name {
+    display: none;
+}
+
+
+@media screen and (max-width: 40rem) {
     body {
         grid-template-areas:
             "sidebar sidebar"
@@ -157,6 +156,7 @@ body {
     }
 
     .name {
+        display: block;
         font-size: 7vh;
         font-family: 'Visby', serif;
         margin: 10vh 0;
