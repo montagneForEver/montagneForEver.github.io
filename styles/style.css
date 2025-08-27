@@ -150,7 +150,7 @@ body {
     }
 }
 
-@media screen and (width<=799px) {
+@media (width<=799px) {
     body {
         grid-template-areas:
             "sidebar sidebar"
