@@ -173,13 +173,13 @@ a {
     }
 
     #metier {
-        font-size: 5vh;
+        font-size: min(8vw,5vh);
         text-align: center;
         font-family: 'Visby', serif;
     }
 
     #name {
-        font-size: 7vh;
+        font-size: min(10vw,7vh);
         text-align: center;
         font-family: 'Visby', serif;
     }
