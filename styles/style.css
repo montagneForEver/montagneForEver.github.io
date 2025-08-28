@@ -17,6 +17,16 @@ aside {
     grid-area: sidebar;
 }
 
+.resume {
+    grid-area: resume;
+}
+
+.photo {
+    grid-area: photo;
+    display: flex;
+    align-items: center;
+}
+
 body {
     display: grid;
     grid-template-columns: 3fr 9fr;
@@ -24,6 +34,7 @@ body {
 
 body {
     grid-template-areas:
+        "photo resume"
         "sidebar content";
 }
 
@@ -43,6 +54,8 @@ body * {
 }
 
 aside,
+.photo,
+.resume,
 main {
     padding: 1em;
 }
@@ -51,14 +64,24 @@ main {
     margin: 2em 0 0 0;
 }
 
-/*dimensions bloc texte*/
+.bloc:first-child {
+    margin: 0;
+}
+
+/*Fonts*/
 
 body {
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Visby', serif;
 }
 
 .photo {
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -66,6 +89,11 @@ img {
     border: 1px solid white;
     max-width: 60%;
 }
+
+.titre {
+    font-weight: bold;
+}
+
 
 h1 {
     margin: 0 0 0.5em 0;
@@ -99,57 +127,49 @@ li {
     border-left: 1px solid var(--couleur-fond-gauche);
 }
 
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 /*couleurs de fond*/
 
-main {
+main,
+.resume {
     background-color: var(--couleur-fond-droite);
 }
 
-aside {
+aside,
+.photo {
     background-color: var(--couleur-fond-gauche);
-}
-
-
-/*Fonts*/
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Visby', serif;
-}
-
-.titre {
-    font-weight: bold;
 }
 
 /*couleur police*/
 
 main h2,
+.resume h2,
 .societe {
     color: var(--couleur-titre);
 }
 
-main {
+main,
+.resume {
     color: var(--couleur-police-droite);
 }
 
-aside {
+aside,
+.photo {
     color: var(--couleur-police-gauche);
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
-}
 
 /* web responsive */
 
 @media screen and (max-width: 40rem) {
     body {
         grid-template-areas:
+            "photo photo"
+            "resume resume"
             "sidebar sidebar"
             "content content";
     }
@@ -167,19 +187,25 @@ a {
         align-items: center;
     }
 
+    .resume {
+        font-size:min(8vw, 5vh);
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+    }
+
     .hidden {
         display: block;
         flex: 1;
     }
 
     #metier {
-        font-size: min(8vw,5vh);
+        font-size: min(8vw, 5vh);
         text-align: center;
         font-family: 'Visby', serif;
     }
 
     #name {
-        font-size: min(10vw,7vh);
+        font-size: min(10vw, 7vh);
         text-align: center;
         font-family: 'Visby', serif;
         margin-top: 1em;
@@ -192,7 +218,8 @@ a {
         flex: 1;
     }
 
-    .showed {
+    .resume h1,
+    .resume h2 {
         display: none;
     }
 }

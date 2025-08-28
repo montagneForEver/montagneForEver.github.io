@@ -19,20 +19,21 @@
 </head>
 
 <body>
-    <aside>
-        <div class="photo">
-            <picture>
-                <source media="(max-width: 40rem)" srcset="images/portrait_zoom_400w.jpg" />
-                <!--solution de repli pour les vieux navigateurs-->
-                <img src="images/portrait_400w.jpg" alt="photo sympa de moi meme lol" />
-            </picture>
-            <div class="hidden">
-                <p id="name">Marc-Antoine BERNARD</p>
-            </div>
-            <div class="hidden">
-                <p id="metier">Ingénieur Industriel IA</p>
-            </div>
+
+    <div class="photo">
+        <picture>
+            <source media="(max-width: 40rem)" srcset="images/portrait_zoom_400w.jpg" />
+            <!--solution de repli pour les vieux navigateurs-->
+            <img src="images/portrait_400w.jpg" alt="photo sympa de moi meme lol" />
+        </picture>
+        <div class="hidden">
+            <p id="name">Marc-Antoine BERNARD</p>
         </div>
+        <div class="hidden">
+            <p id="metier">Ingénieur Industriel IA</p>
+        </div>
+    </div>
+    <aside>
         <div class="bloc">
             <ul>
                 <li><i class="bi bi-phone"></i> +33 (0)7 66 26 94 46</li>
@@ -86,15 +87,17 @@
             </ul>
         </div>
     </aside>
-    <main>
-        <h1 class="showed">Marc-Antoine Bernard</h1>
-        <h2 class="showed">INGENIEUR INDUSTRIEL IA</h2>
+    <div class="resume">
+        <h1>Marc-Antoine Bernard</h1>
+        <h2>INGENIEUR INDUSTRIEL IA</h2>
         <p>En recherche de stage de Master démarrant mi avril 2026 pour 4 mois minimum.</p>
         <p>Mon ambition est de mettre à profit mon expérience d'ingénieur opérationnel pour accompagner la
             transition numérique du secteur industriel et mettre à profit l'avantage de l'intelligence
             artificielle.</p>
         <p>Afin de développer mon expertise, je poursuis actuellement un Master en gestion de données (Data
             Engineer) et IA à l'ESTIA Bidart, et je recherche un stage de fin de Master.</p>
+    </div>
+    <main>
         <div class='bloc'>
             <h2>Compétences</h2>
             <ul>
