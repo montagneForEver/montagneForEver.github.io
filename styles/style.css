@@ -162,6 +162,10 @@ aside,
     color: var(--couleur-police-gauche);
 }
 
+em {
+    font-style: normal;
+    font-weight: bold;
+}
 
 /* web responsive */
 
@@ -188,7 +192,7 @@ aside,
     }
 
     .resume {
-        font-size:min(8vw, 5vh);
+        font-size: min(8vw, 5vh);
         line-height: 1.5;
         letter-spacing: 0.05em;
     }
