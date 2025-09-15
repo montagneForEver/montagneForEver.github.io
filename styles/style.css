@@ -128,8 +128,11 @@ li {
 }
 
 a {
-    text-decoration: none;
     color: currentColor;
+}
+
+a.lien {
+    text-decoration: none;
 }
 
 /*couleurs de fond*/
