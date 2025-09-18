@@ -230,3 +230,14 @@ em {
         display: none;
     }
 }
+
+.photo picture img {
+    opacity: 1;
+    transition-delay: .1s;
+    transition-timing-function: ease;
+    transition-duration: 1.5s;
+
+    @starting-style {
+        opacity: 0;
+    }
+}
